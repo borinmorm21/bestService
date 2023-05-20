@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3631/3631163.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Search Bar -->
+  <div class="search-container">
+    <h2>Best Services</h2>
+    <div class="search">
+      <input type="search" name="search" id="search" placeholder="Search..." oninput="filterCards(this.value)">
+      <button id="searchBtn">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+
+    <button id="cart" onclick="toggleCartPanel()">
+      <i class="fas fa-cart-shopping"></i>
+      <span id="cartCount" class="cart-count">0</span>
+    </button>
+  </div>
+
+  <!-- Product Container -->
+  <div class="container"></div>
+
+  <!-- Cart Panel -->
+  <div id="cartPanel" class="cart-panel">
+    <div class="cart-panel-content">
+      <div id="cartItems" class="cart-items"></div>
+      <button id="check-out">Check Out</button>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <p>Inspired by pro. SAM ART</p>
+    <p><a href="index.html">Created by Morm Borin</a></p>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
